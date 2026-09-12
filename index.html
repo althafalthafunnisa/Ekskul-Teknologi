@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Ekskul Teknologi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <!-- Halaman 1: Form Pendaftaran -->
+    <div id="formPage">
+        <div class="card-header">
+            <h2>Ekskul Teknologi</h2>
+            <p>Periode 2026/2027</p>
+        </div>
+
+        <form id="myForm">
+            <div class="form-group">
+                <label for="Nama_Lengkap">Nama Lengkap</label>
+                <input type="text" id="Nama_Lengkap" required placeholder="Contoh: Aisyah Az-Zahra">
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Kelas</label>
+                <select id="kelas" required>
+                    <option value="">-- Pilih Kelas --</option>
+                    <option value="7 Fathimah bintu Muhammad">7 Fathimah bintu Muhammad</option>
+                    <option value="8 Asma' bintu abu bakar">8 Asma' bintu abu bakar</option>
+                    <option value="9 Nusaibah">9 Nusaibah</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="No_Whatsapp">No. WhatsApp</label>
+                <input type="tel" id="No_Whatsapp" required placeholder="08xxxxxxxxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="Peminatan">Peminatan</label>
+                <input type="text" id="Peminatan" required placeholder="Contoh: Web Design, Python, Robotik">
+            </div>
+
+            <div class="form-group">
+                <label for="Alasan">Alasan Bergabung</label>
+                <textarea id="Alasan" required placeholder="Tuliskan motivasi Anda bergabung..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Kirim Pendaftaran</button>
+        </form>
+    </div>
+
+    <!-- Halaman 2: Ucapan Selamat -->
+    <div id="successPage" class="success-page">
+        <div class="success-icon">✓</div>
+        <h2>Alhamdulillah!</h2>
+        <p>Selamat, data pendaftaran Anda telah berhasil terkirim ke sistem.</p>
+        <button class="btn-secondary" onclick="resetForm()">Isi Form Kembali</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
